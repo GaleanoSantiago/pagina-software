@@ -29,7 +29,6 @@ if(imgsIndex!=null){
                 modal.style.gap = '20px';
                 modalImg.src = img.src;
 
-                console.log(modalImg.src);
                 // Encuentra la posición de "/assets/"
                 posicionAssets = modalImg.src.indexOf('/assets/');
 
