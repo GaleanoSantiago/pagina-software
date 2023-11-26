@@ -1,0 +1,1108 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root {
+    --bg: #3C465C;
+    --primary: #78FFCD;
+    --solid: #fff;
+    --celesteClaro:#769ECB;
+    --azulGris:#758f9c;
+    --azulMorado:#516091;
+
+    /*prueba*/
+    --bs-blue: #0d6efd;
+    --bs-indigo-: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --funBlue:#175a9e;
+    --shark:#1e1e1f;
+    --white_1:#f6f7f1;
+    --bg-colorVidrio:rgba(255, 255, 255, .15);
+    --backdrop-filterVidrio:blur(5px);
+    --azulIntenso:#090979;
+    --negroIn:#020024;
+    --rojoOscuro:#C81D11;
+    --rojoBrillante: #FF0800;
+    --celesteBrillante:#00d4ff;
+    --azulFooter:#1b2a4e;
+    --azulNavBar: rgb(17, 0, 255);
+    --blackTitulos:#444649;
+    --greyPs:#616161;
+    --blackYT:#181818;
+    --linesYT:#303030;
+    --blackYT2:#202020;
+    --blackYT3:#313131;
+    --whiteYT:#f9f9f9;
+    --tittlepurple:#1f2667;
+    /* --z1:#232741; */
+    --z1:#0f172a;
+    --z2:#2c2e43;
+    --z3:#222733;
+    --z4:#080d17;
+    --dark-github:#0d1117;
+    --dark-github-2: #161b22;
+    --dark-beauty:#1e242c;
+    --dark-beauty-2:#171925;
+    --dark-brauty-3:#252934;
+
+    /* Colores nuevos */
+    --bs-indigo: #BE1206;
+    --blur-indigo: rgba(74, 52, 169, 0.6);
+
+    --gameBlue: #0f172a; /*15 23 42*/
+    --gameBlueLight: #1e293b; 
+    --gameLips: #be123c; /*190 18 60*/
+    --gameBlood: #BE1206; /*190 18 6*/
+
+    /* Colores de la institucion */
+    --bordo-escarlata: #8B0000;
+    --bordo-vino:#900020;
+    --bordo-cereza-oscura:#7B0000;
+    --bordo-brillante: #CC0000;
+
+    --white-bg: #F5F6F6;
+    --white-bg-2: #FDFCFF;
+    --white-bg-3: #eeeeee;
+    --white-bg-4: #e5e5e5;
+
+    /* Colores en uso */
+    --main-colour:var(--bordo-escarlata);
+    --secondary-colour: var(--bordo-brillante);
+    --third-colour: var(var(--white-bg));
+    --footer-color:#6E0000;
+}
+
+body{
+    font-family: sans-serif;
+    /* font-family: Merriweather,serif; */
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    scroll-behavior: smooth;
+    /* height:1000vh; */
+    background:var(--white-bg-4);
+}
+
+section{
+    padding:50px 0;
+}
+main section h2{
+    text-align:center;
+    color:var(--main-colour);
+    text-transform: uppercase;
+    font-size:2.3rem;
+    font-weight:600;
+}
+
+main section p{
+    text-align:justify;
+}
+.text-resaltado{
+    color:var(--bs-danger);
+    font-weight: bolder;
+}
+
+.bg-white-1{
+    background-color:var(--white-bg-2);
+}
+
+/* ------------------------------- Header ------------------------------- */
+
+header{
+    height:90vh;
+    padding: 50px 20px 5px 20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(rgba(5,7,8, 0.4), rgba(5,7,8, 0.6)), url(./../img/instituto3.png);
+    /*Parallax*/
+    background-attachment: fixed;
+    background-size:cover;
+    background-position:center;
+    background-repeat: repeat;
+
+    gap:5px;
+    color:var(--bs-light);
+
+}
+
+header h2, header h1{
+    text-align:center;
+} 
+header img{
+    width:200px;
+    filter: drop-shadow(0 5px 10px rgba(5,7,8, 0.4));
+}
+
+/* ----------- Navbar ----------- */
+
+nav {
+    width: 100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: var(--main-colour);
+    padding-left: 2vw;
+    color: #fff;
+    height: 60px;
+    z-index:2;
+    box-shadow: 0 7px 20px 0 rgb(0 0 0 / 20%), 0 4px 10px 0 rgb(0 0 0 / 20%);
+
+    /* padding-bottom:0 !important; */
+
+}
+
+nav .container, nav .container-fluid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:100%;
+}
+
+nav .nav-logo{
+    width:70px;
+}
+
+.cont-ul {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    height: 60px;
+    margin-top:20px; /* Para solucionar el error del espacio debajo del cont-ul */
+    /* width:70%; */
+}
+
+.cont-ul li {
+    list-style: none;
+    cursor: pointer;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    /* padding: 1.5vw; */
+    height:100%;
+    padding: 10px 15px;
+    transition:  all .3s ease 0s;
+
+}
+
+.cont-ul li:hover {
+    background-color: var(--secondary-colour);
+}
+/* Para que el li de carreras y su dropdown esten unidos */
+nav .cont-ul .dropdown-lis{
+    display:flex;
+    height: 100%;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    gap:3px;
+    height:60px;
+    width:100%;
+}
+nav a svg{
+    width:20px;
+    fill:#fff;
+    height:fit-content;
+
+}
+nav a svg.svg-info{
+    fill:none;
+
+}
+nav a svg.svg-news{
+    width:30px;
+}
+
+nav a:hover{
+    color:#fff;
+}
+
+.develop {
+    position: relative;
+}
+#nav-carreras .develop {
+    gap:5px;
+}
+.develop svg{
+    width:20px;
+}
+.ul-second {
+    display: none;
+    position: absolute;
+    /* margin-top: 1.5vw; */
+    /* margin-top: 475px; */
+    top:50px;
+    right:-30px;
+
+}
+
+.ul-second > li {
+    width: 300px;
+    transform: translateX(-20px);
+    border-bottom:solid 1px #fff ;
+    text-align: center;
+    background-color: var(--main-colour);
+    font-size:.9rem;
+}
+
+.ul-second > li:hover {
+    background-color: var(--secondary-colour);
+}
+
+
+header .btn-down{
+    background: var(--main-colour);
+    padding:12px 5px;
+    border-radius:5px;
+    transition: all ease .4s;
+    animation: arrow-animation 2s ease-in-out infinite;
+
+}
+header .btn-down:hover{
+    background: var(--bs-light);
+    transition: all ease .4s;
+
+}
+
+header .container-btn-down svg{
+    fill:var(--bs-light);
+    width:40px;
+}
+header .btn-down:hover svg.svg-arrow-down {
+    fill: var(--bs-light);
+    transition: all ease .4s;
+
+}
+@keyframes arrow-animation{
+    0%{
+        background: var(--main-colour);
+    }
+    50%{
+        background: var(--secondary-colour);
+    }
+    100%{
+        background: var(--main-colour);
+    }
+}
+
+/* ------------------------------- Informacion ------------------------------- */
+
+.bloq-cont{
+    background:var(--white-bg-2);
+    padding:30px ;
+    border-radius:10px;
+    /* box-shadow: 0 0 10px rgba(5,7,8, 0.2); */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+.miniseccion-calendario {
+    padding:20px 0;
+}
+.miniseccion-calendario h3 ,h3.subtitulo{
+    text-align:center;
+    color:var(--main-colour);
+    text-transform: uppercase;
+    font-size:2.1rem;
+    font-weight:550;
+    margin-bottom:15px;
+}
+.bloq-cont .cont-info-foto{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.bloq-cont .cont-info-foto img{
+    width:100%;
+}
+.miniseccion-calendario .cont-foto-calendario{
+    display:flex;
+    justify-content:center;
+}
+.miniseccion-calendario .cont-foto-calendario img{
+    max-width:400px;
+}
+.img-index-modal{
+    cursor:pointer;
+}
+
+.carousel.slide{
+    background:var(--main-colour);
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.carousel-inner{
+    width:80%;
+    margin:auto;
+}
+.carousel-item{
+    height:400px;
+    overflow:hidden;
+}
+/* .carousel-item img{
+    width:200;
+} */
+
+/* -------------------- FAQs -------------------- */
+.miniseccion-faq{
+    padding:50px 0;
+}
+/* .miniseccion-faq h2{
+    margin-top:20px;
+} */
+.accordion{
+    width:80%;
+    margin:auto;
+}
+
+/* -------------------- Horarios -------------------- */
+.horario_semanal .row{
+    padding:30px 0;
+    /* border:1px solid #000; */
+}
+.horarios img{
+    width:100%;
+}
+
+
+
+/* ------------------------------- Ubicacion ------------------------------- */
+
+#ubicacion iframe{
+    width: 100%;
+    height:400px;
+}
+
+#ubicacion .bloq-cont .mb-2 a{
+    font-size:2rem;
+    color:var(--bs-danger);
+}
+
+/* -------------------- Contactos -------------------- */
+/* #estructura-curricular{
+    margin-bottom:30px;
+} */
+
+#contacto form{
+    width:80%;
+    margin:auto;
+}
+
+.btn-submit{
+    background:var(--main-colour);
+    color:var(--bs-light);
+    width: 100%;
+    padding:15px 0;
+    font-size:1.15rem;
+}
+.btn-submit:hover{
+    background:var(--secondary-colour);
+    color:var(--bs-light);
+}
+/* ------------------------------- Carreras ------------------------------- */
+
+.card-carreras{
+    background:var(--white-bg-2);
+    padding:10px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height:300px;
+    margin:10px auto;
+    transition:all .4s ease;
+
+}
+.card-carreras:hover{
+    box-shadow: 0 0 10px rgba(5,7,8, 0.3);
+    transition:all .4s ease;
+}
+
+.card-carreras .img-card-carrera{
+    height:200px;
+    overflow:hidden;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+.card-carreras .img-card-carrera img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .4s ease;
+}
+.card-carreras:hover .img-card-carrera img{
+    transform: scale(1.03);
+    transition: all .4s ease;
+}
+
+.card-carreras .card-body-carrera{
+    padding:10px;
+}
+#carreras a{
+    text-decoration: none;
+    color:var(--main-colour);
+    text-align:center;
+}
+#carreras .cont-btn-incripcion{
+    padding:20px 0;
+}
+.cont-btn-incripcion ul{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    list-style: circle;
+}
+
+/* ------------------------------- Footer ------------------------------- */
+
+footer{
+    background:var(--footer-color);
+    color:var(--bs-light);
+}
+footer .cont-img-footer{
+    display:flex;
+    align-items:end;
+    justify-content:center;
+    gap:20px;
+    padding: 15px 0;
+    width:90%;
+    margin:auto;
+}
+footer .cont-img-footer img{
+    width:100px;
+}
+footer .cont-img-footer span{
+    font-size:1.2rem;
+}
+footer .info-footer{
+    text-align:justify;
+}
+footer a{
+    text-decoration:none;
+}
+footer .redes-footer .fa-instagram{
+    font-size:2.4rem;
+}
+footer .redes-footer a{
+    font-size:1.4rem;
+    color:var(--bs-light);
+
+}
+footer .contacto-footer ul{
+    list-style: none;
+    padding:0;
+}
+footer .contacto-footer li{
+    padding:10px 0;
+}
+footer .contacto-footer li .fa{
+    font-size:1.3rem;
+}
+footer .second-col-footer, footer .tercer-col-footer{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+}
+footer .tercer-col-footer h4{
+    text-align:center;
+}
+footer .tercer-col-footer ul li{
+    padding:10px 0;
+    text-align:justify;
+}
+
+footer .copyright-footer{
+    background: #4B0000;
+    padding:10px 0 5px 0;
+}
+footer .copyright-footer p{
+    text-align:center;
+}
+.btn-scrollTop{
+    text-decoration:none;
+    position:fixed;
+    bottom:-50px;
+    right:20px;
+    background:var(--main-colour);
+    padding:10px;
+    border-radius:50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    transition: all .4s ease;
+}
+.btn-scrollTop.up{
+    bottom:40px;
+}
+.btn-scrollTop:hover{
+    box-shadow: 0 0 15px rgba(5,7,8, 0.4);
+    transition: all .4s ease;
+    background:var(--secondary-colour);
+
+}
+.btn-scrollTop svg{
+    width:30px;
+}
+.btn-scrollTop #Dribbble-Light-Preview{
+    fill:var(--bs-light)!important;
+}
+
+
+/* ------------------------------- Pagina de Carreras.html ------------------------------- */
+
+/* ----------------- Navbar de Carreras -------------------------- */
+
+/* #carreras-header nav .dropdown{
+    width:auto !important;
+} */
+
+/* ----------------- Header de Carreras -------------------------- */
+
+header#carreras-header{
+    height:600px;
+    background:linear-gradient(rgba(5,7,8, 0.4), rgba(5,7,8, 0.4)), url(./../img/software-big.jpg);
+    /* background:none; */
+    /*Parallax*/
+    background-attachment: fixed;
+    background-size:cover;
+    background-position:center;
+    gap:20px;
+}
+
+header#carreras-header img{
+    width:150px;
+}
+header#carreras-header .container-btn-down{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+}
+header#carreras-header .container-btn-down .btn-down{
+    width:fit-content;
+    /* border:1px solid #000; */
+}
+
+#informacion-carrera .miniseccion-lenguajes{
+    padding:20px 0;
+}
+#informacion-carrera .miniseccion-lenguajes-imgs{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    /* width:80%; */
+    /* border:1px solid #000; */
+    flex-wrap:wrap;
+    margin:auto;
+}
+
+.lenguajes-imgs{
+    width:fit-content;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.lenguajes-imgs.habilidades-clave{
+    width:300px;
+}
+.lenguajes-imgs img{
+    width:80px;
+}
+.lenguajes-imgs svg{
+    width:100px;
+}
+/* ------------------------- Informacion de la institucion -------------------------- */
+#info-institucion{
+    margin-top:50px;
+}
+
+/* ------------------------- Estructura Curricular -------------------------- */
+.img-estructura-curr{
+    text-align:center;
+}
+.img-estructura-curr img{
+    width:600px;
+    cursor:pointer;
+}
+
+.cont-btn-incripcion{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    /* border:1px solid #000; */
+    gap:20px;
+    margin-top:40px;
+}
+
+.btn-incripcion{
+    padding:25px;
+    width:fit-content;
+    background:var(--main-colour);
+    /* background: linear-gradient(to bottom, #8B0000, #660000); */
+
+    text-decoration:none;
+    color:var(--bs-light) !important;
+    border-radius:10px;
+    font-size:1.2rem;
+    text-transform: uppercase;
+    transition:all .4s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-incripcion:hover{
+    transition:all .4s ease;
+    box-shadow: 0 0 10px rgba(5,7,8, 0.3);
+    background:var(--secondary-colour);
+    color:var(--bs-light);
+}
+
+.cont-btn-incripcion p{
+    font-size: 1.1rem;
+    color:var(--bs-danger);
+    text-align:center;
+}
+
+
+/*------------------------- Estilos para el modal -------------------------*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: auto;
+    /* max-height: 80%; */
+}
+
+/* Estilos para el botón de cierre (la "X") */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+/* boton de descarga */
+.download-button {
+    width:fit-content;
+    display: block;
+    text-align: center;
+    background-color: var(--main-colour);
+    color: var(--bs-light);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+
+.download-button:hover {
+    background-color: var(--secondary-colour);
+    transition: all .4s ease;
+    color: var(--bs-light);
+
+}
+
+
+/* ----------------------------- Seccion de Mediaqueries ----------------------------- */
+
+/* Escritorio extra grande */
+@media only screen and (min-width: 1200px){
+
+}
+
+/* Escritorio grande */
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    /* ----------------- index.html -----------------  */
+    .bloq-cont .cont-info-foto{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+    }
+    /* ------- Navbar --------- */
+    
+}
+
+/* Tablets y smartphones MAS ESPECIFICO*/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    /* ----------------- index.html -----------------  */
+    main section h2{
+        font-size:1.7rem;
+        font-weight:600;
+    }
+    /* ------- Navbar --------- */
+
+    .nav-logo {
+        display: none;
+    }
+    nav .container, nav .container-fluid{
+        justify-content:center;
+    }
+    nav .cont-ul{
+        width:100%;
+        justify-content: space-evenly;
+        padding-left:0;
+    }
+    nav li{
+        font-size:.8rem;
+    }
+    nav .ul-second li a{
+        height:40px;
+        font-size:.75rem;
+    }
+
+    
+    /* ------- Header --------- */
+    header{
+        padding: 50px 30px 5px 30px; /*top right bottom left*/
+
+    }
+    header h1{
+        font-size:2rem;
+    }
+    header h2{
+        font-size:1.5rem;
+    }
+
+    /* ------- Informacion --------- */
+    .bloq-cont .cont-info-foto{
+        /* border:1px solid #000; */
+        padding:20px 0;
+    }
+    .bloq-cont .cont-info-foto img{
+        width:80%;
+    }
+    .miniseccion-calendario h3, h3.subtitulo{
+        font-size:1.5rem;
+        font-weight:500;
+    }
+}
+
+/* Tablets y smartphones */
+@media only screen and (max-width: 767px){
+    /* ----------------- index.html -----------------  */
+    
+    main section h2{
+        font-size:1.7rem;
+        font-weight:600;
+    }
+    .bloq-cont{
+        padding:30px 15px;
+    }
+    section{
+        padding:30px 0;
+    }
+    /* ------- Header --------- */
+    header{
+        padding: 50px 30px 5px 30px; /*top right bottom left*/
+
+    }
+    header h1{
+        font-size:2rem;
+    }
+    header h2{
+        font-size:1.5rem;
+    }
+    header img{
+        width:150px;
+    }
+
+    /* ------- Navbar --------- */
+
+    .nav-logo {
+        display: none;
+    }
+
+    nav .container, nav .container-fluid{
+        justify-content:center;
+    }
+    nav .cont-ul{
+        width:100%;
+        justify-content: space-evenly;
+        padding-left:0;
+    }
+    nav li{
+        font-size:.75rem;
+    }
+    nav li a{
+        flex-direction: column;
+    }
+    nav .develop{
+        padding:5px;
+    }
+
+    nav .ul-second li a{
+        height:40px;
+        font-size:.7rem;
+    }
+    nav .ul-second{
+        top:60px;
+    }
+    #nav-carreras .develop{
+        flex-direction:column;
+        gap:0;
+
+    }
+
+    /* ------- Informacion --------- */
+    .bloq-cont .cont-info-foto{
+        padding:20px 0;
+    }
+    .bloq-cont .cont-info-foto img{
+        width:80%;
+    }
+    .miniseccion-calendario h3, h3.subtitulo{
+        font-size:1.5rem;
+        font-weight:500;
+    }
+    .miniseccion-calendario .cont-foto-calendario img{
+        max-width:70%;
+    }
+    /* ------- ubicacion --------- */
+    #ubicacion .bloq-cont{
+        padding: 30px 10px;
+    }
+    .ubi-contenido{
+        display:flex;
+    }
+    .ubi-contenido .mb-2{
+        padding:0 5px;
+    }
+
+    /* ------- Carreras --------- */
+    
+    #carreras .card-body-carrera h5{
+        font-size:.95rem;
+        font-weight:bold;
+    }
+    #carreras .img-card-carrera img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* ------- Modal --------- */
+
+    .modal-content {
+        max-width:80%;
+    }
+
+
+    /* ----------------- carreras.html -----------------  */
+
+    /* --------- Estructura Curricular --------- */
+    .img-estructura-curr img{
+        width:100%;
+    }
+
+}
+
+
+/*Celulares*/
+@media only screen and (max-width: 575px){
+    /* --------------------- General ---------------------*/
+    /* ----------- navbar ---------- */
+
+    nav li{
+        font-size:.65rem;
+        padding:10px !important;
+    }
+    .ul-second {
+        /* top:-370px !important; */
+        right:-40px;
+    }
+    
+
+    p, .cont-btn-incripcion p, li{
+        font-size:0.88rem;
+    }
+    h5{
+        font-size:.9rem;
+    }
+    small{
+        font-size:0.75rem;
+    }
+    .cont-btn-incripcion p{
+        font-weight:bold;
+
+    }
+    /* --------------------- Index.html ---------------------*/
+    /* --------------------- Header ---------------------*/
+    header{
+        padding: 50px 20px 5px 20px; /*top right bottom left*/
+
+    }
+    header h1{
+        font-size:1.6rem;
+    }
+    header h2{
+        font-size:1.3rem;
+    }
+    /* ------------- Carreras ---------------*/
+
+    .card-carreras{
+        max-width:400px;
+    }
+    #carreras .card-body-carrera h5{
+        font-size:1.1rem;
+        font-weight:bold;
+    }
+    /* ------------- Footer ---------------*/
+    footer{
+        padding-top:40px;
+    }
+    footer .contenido-footer{
+        padding:0 20px;
+    }
+    footer .second-col-footer, footer .tercer-col-footer{
+        padding:20px 0;
+    }
+
+    footer .second-col-footer{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    footer .copyright-footer{
+        background: #4B0000;
+        padding:10px 0 5px 0;
+    }
+    /* ----------------- carreras.html -----------------  */
+
+    /* --------- Estructura Curricular --------- */
+    .img-estructura-curr img{
+        width:90%;
+    }
+
+}
+
+/* Mediaqueries especial pantallas pequeñas */
+@media only screen and (max-width:465px){
+    /* --------------------- General ---------------------*/
+    p, .cont-btn-incripcion p, li{
+        font-size:0.84rem;
+    }
+    small{
+        font-size:0.73rem;
+    }
+    main section h2{
+        font-size:1.3rem;
+        font-weight:600;
+    }
+    /* --------------------- Navbar ---------------------*/
+
+    nav li{
+        padding:2px 5px !important;
+        font-size:.6rem;
+    }
+    
+    #nav-carreras .svg-carreras{
+        width:20px;
+        
+    }
+    
+    /* --------------------- Informacion ---------------------*/
+    .cont-info-foto{
+        padding: 20px;
+    }
+    .miniseccion-calendario h3, h3.subtitulo{
+        font-size:1.2rem;
+        font-weight:500;
+    }
+    
+    /* --------------------- Carreras ---------------------*/
+
+    /* ----- boton de la preinscipcion -----*/
+    .btn-incripcion{
+        padding:20px;
+        font-weight:bold;
+        font-size:1rem;
+    }
+    .cont-btn-incripcion{
+        padding:20px 15px !important;  
+        /* border:1px solid #000;       */
+    }
+
+}
+
+/*Celulares angostos*/
+@media only screen and (max-width:375px){
+    /* --------------------- Index.html ---------------------*/
+    /* --------------------- Header ---------------------*/
+    header h1{
+        font-size:1.3rem;
+    }
+    header h2{
+        font-size:1.1rem;
+    }
+    /* --------------------- Navbar ---------------------*/
+    nav#nav-carreras .container{
+        padding:3px;
+    }
+    nav li{
+        padding:2px 3px !important;
+    }
+    nav#nav-carreras li a{
+        text-align:center;
+    }
+    nav#nav-carreras .ul-second {
+        right:-20px;
+    }
+    /* --------------------- Ubicacion ---------------------*/
+
+    .ubi-contenido{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+    .ubi-contenido .mb-2{
+        padding:0 5px;
+    }
+    /* --------------------- Footer ---------------------*/
+
+    footer .contenido-footer{
+        padding:0 10px;
+
+    }
+}
+
+
