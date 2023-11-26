@@ -976,6 +976,20 @@ header#carreras-header .container-btn-down .btn-down{
     header h2{
         font-size:1.3rem;
     }
+    /* ------------- minisecion lenguajes ---------------*/
+    .miniseccion-lenguajes-imgs{
+        width:90%;
+    }
+
+    /* ------------- miniseccion faqs ---------------*/
+    .accordion{
+        width:100%;
+    }
+    /* ------------- miniseccion faqs ---------------*/
+    .carousel-item{
+        height:auto;
+        overflow:hidden;
+    }
     /* ------------- Carreras ---------------*/
 
     .card-carreras{
@@ -1049,6 +1063,11 @@ header#carreras-header .container-btn-down .btn-down{
         font-weight:500;
     }
     
+    /* --------------------- Contacto ---------------------*/
+    #contacto form{
+        width:100%;
+    }
+
     /* --------------------- Carreras ---------------------*/
 
     /* ----- boton de la preinscipcion -----*/

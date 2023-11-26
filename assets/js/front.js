@@ -71,22 +71,21 @@ addEventListener("scroll",()=>{
 const btnDropdown = document.querySelector(".develop");
 const ulSecond = document.querySelector(".ul-second");
 
-btnDropdown.addEventListener("click",()=>{
-    // console.log(ulSecond.style.display);
-    if(ulSecond.style.display === ""){
-        ulSecond.style.display="block";
-    }else{
-        ulSecond.style.display="";
-    }
-})
-// Event listener para clics en cualquier lugar de la página
-document.addEventListener("click", (event) => {
-    // Verifica si el clic no fue dentro del botón
-    if (!btnDropdown.contains(event.target)) {
-        // Oculta el menú
-        ulSecond.style.display = "";
-    }
-});
+// btnDropdown.addEventListener("click",()=>{
+//     if(ulSecond.style.display === ""){
+//         ulSecond.style.display="block";
+//     }else{
+//         ulSecond.style.display="";
+//     }
+// })
+// // Event listener para clics en cualquier lugar de la página
+// document.addEventListener("click", (event) => {
+//     // Verifica si el clic no fue dentro del botón
+//     if (!btnDropdown.contains(event.target)) {
+//         // Oculta el menú
+//         ulSecond.style.display = "";
+//     }
+// });
 
 
 // Boton para enviar el formulario
